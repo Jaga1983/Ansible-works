@@ -4,5 +4,4 @@
   tasks:
     - name: Create new user
       debug:
-        msg: "create new user"
-        
+        msg: "create new user2"
