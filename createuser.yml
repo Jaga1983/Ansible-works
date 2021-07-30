@@ -1,0 +1,8 @@
+---
+- name: create new user
+  hosts: localhost
+  tasks:
+    - name: Create new user
+      debug:
+        msg: "create new user"
+        
