@@ -1,0 +1,8 @@
+---
+  - name: Getting system information
+    hosts: localhost
+    tasks:
+      - name: Getting system information
+        template:
+          src: system.j2
+          dest: /etc/motd
