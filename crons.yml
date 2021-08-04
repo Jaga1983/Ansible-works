@@ -17,3 +17,5 @@
         name: "CPU-memory check"
         minute: "*/10"
         job: "sh /root/crons/cpu_mem.sh >> /root/crons/cpu_mem.log"
+        state: absent
+        
