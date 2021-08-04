@@ -6,4 +6,10 @@
       file:
         path: /root/crons
         state: directory
+
+    - name: creating the scripts
+      template:
+        src: crons-cpu.j2
+        dest: /root/crons/cpu_mem.sh
+        mode: 0755
         
