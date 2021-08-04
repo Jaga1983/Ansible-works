@@ -1,0 +1,9 @@
+---
+- name: Create cron job
+  hosts: localhost
+  tasks:
+    - name: create new directory
+      file:
+        path: /root/crons
+        state: directory
+        
