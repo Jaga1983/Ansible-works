@@ -12,4 +12,8 @@
         src: crons-cpu.j2
         dest: /root/crons/cpu_mem.sh
         mode: 0755
-        
+    - name: create the cron jobs every 10 min
+      cron:
+        name: "CPU-memory check"
+        minute: "*/10"
+        job: "sh /root/crons/cpu_mem.sh >> /root/crons/cpu_mem.log"
